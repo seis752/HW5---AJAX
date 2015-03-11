@@ -7,6 +7,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
+    <script type="text/javascript">
+        function handrolled(){
+            var nameSearchJsVariableNameOfPower=document.getElementById('nameSearch').value;
+            //alert(nameSearchJsVariableNameOfPower);
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+                if (xhr.readyState == 4){
+                    //alert(xhr.responseText);
+                    document.getElementById("resultshere").innerHTML = xhr.responseText;
+                }
+            }
+            xhr.open('GET','searchresults.php?nameSearch='+ nameSearchJsVariableNameOfPower, true);
+            xhr.send(null);
+        }
+
+    </script>
 </head>
 <body>
     <div>
@@ -19,7 +36,7 @@
             <label>
                 <input type="submit" name="Search" id="Search" value="search"/>
             </label>
-                <input type="button" value="JS Search"/>
+                <input type="button" value="JS Search" onclick="handrolled();"/>
         </form>
     </div>
     <div id="resultshere"></div>
