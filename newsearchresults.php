@@ -1,6 +1,5 @@
 <?php
-include("settings.php");
-
+    include_once('settings.php');
 
 if(isset($_POST['sending'])){
     $data = mysql_real_escape_string($_POST['sending']);

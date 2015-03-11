@@ -1,6 +1,5 @@
 <?php
-include_once('loggedin.php');
-include_once ('settings.php');
+include_once('settings.php')
 ?>
 <ol>
     <?php

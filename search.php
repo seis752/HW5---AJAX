@@ -1,5 +1,4 @@
 <?php
-    include_once('loggedin.php');
     require_once("functions.php");
     include_once('settings.php')
 ?>

@@ -2,9 +2,6 @@
 require_once("functions.php");
 include_once "settings.php";
 
-    if ($_SESSION['user'] ){
-        header("Location: index.php");
-    }
     if (isset($_GET['username'])){
         $name= $_GET['username'];
         $password= $_GET['password'];
