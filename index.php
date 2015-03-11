@@ -12,18 +12,16 @@
 </head>
 <body>
 <div class="main-card">
-    <h1>
-    Some Page
-    </h1>
-    <form action="/x/y/z" method="POST">
-        Value1:<input type="text" name="value1"/></br>
-        Value2:<input type="text" name="value2" value="47"/></br>
-        <input type="submit" value="Submit"/>
-    </form>
+    <div class="right"><a href="logout.php" >Logout</a></div>
+    <div class='right'> <?php print $_SESSION['user']; ?></div></br>
+    <div class="page">
+        <a href="index.php">Profile | </a>
+        <a href="friends.php"> Friends | </a>
+        <a href="search.php"> Users Search</a>
+    </div>
 
-    <a href="logout.php">logout</a>
-    <a href="search.php">search</a>
 
 </div>
 </body>
 </html>
+

@@ -8,7 +8,8 @@ if(isset($_POST['sending'])){
         $query = mysql_query("SELECT * FROM user WHERE name LIKE '%$data%' limit 20");
         if(mysql_num_rows($query)!=0){
             while($row = mysql_fetch_assoc($query)){
-                echo '<li>'.$row['name']."-".$row['username'];
+                //header("Content-type: image/png");
+                echo '<li>'."<img src=".$row['profile_img_url']."  width='48' height='48'/>" .' ' .$row['name']."-".$row['username'];
             }
         }
         else

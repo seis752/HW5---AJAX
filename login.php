@@ -13,7 +13,7 @@ include_once "settings.php";
         while($row = mysql_fetch_array($result))
         {
             $_SESSION['user']=$name;
-            header('Location: index.php');
+            header('Location: search.php');
         }
     }
 ?>
@@ -35,9 +35,7 @@ include_once "settings.php";
 
     <input type="submit" name="submit" value="Submit" class="login login-submit"/>
 
-    <div class="login-help">
-        <a href="register.php">Register</a> • <a href="forgot.php">Forgot Password</a>
-    </div>
+
 </form>
 </div>
 </body>

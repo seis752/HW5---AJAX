@@ -44,20 +44,23 @@
 <body>
 
 <div class="main-card">
+    <div class="right"><a href="logout.php" style="color: #2c31e8;">Logout</a></div>
+    <div class='right'> <?php print $_SESSION['user']; ?></div></br></br>
+
     <h1>JS Search</h1>
     <div>
         <form id="form1" name="form1" method="get" action="searchresults.php">
             <label>
-                <input type="text" name="nameSearch" id="nameSearch" placeholder="search by name" onkeyup="handrolled();" />
+                <input type="text" name="nameSearch" id="nameSearch" placeholder="user name" onkeyup="handrolled();" />
             </label>
-                <input type="button" value="JS Search" class="login login-submit" onclick="handrolled();"/>
+                <input type="button" value="search" class="login login-submit" onclick="handrolled();"/>
         </form>
     </div>
     <div id="resultshere"></div>
 
     <h1>jQuery Search</h1>
-    <input type="text" id="textfield" placeholder="search by name" onkeyup="getData(this.value)">
-    <input type="button" value="jQuery Search" class="login login-submit" onclick=""getData(document.getElementById('textfield').value);"/>
+    <input type="text" id="textfield" placeholder="user name" onkeyup="getData(this.value)">
+    <input type="button" value="search" class="login login-submit" onclick=""getData(document.getElementById('textfield').value);"/>
     <div id="jresults"></div>
 
 </div>
