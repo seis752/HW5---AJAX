@@ -31,12 +31,14 @@
         <form id="form1" name="form1" method="get" action="searchresults.php">
             <label>
                 Name:
-                <input type="text" name="nameSearch" id="nameSearch" value="<?php echo $name ?>" />
+                <input type="text" name="nameSearch" id="nameSearch" value="<?php echo $name?>" onkeyup="handrolled();" />
             </label>
             <label>
                 <input type="submit" name="Search" id="Search" value="search"/>
             </label>
                 <input type="button" value="JS Search" onclick="handrolled();"/>
+                <input type="button" value="jQuery Search" onclick="handrolled();"/>
+
         </form>
     </div>
     <div id="resultshere"></div>
