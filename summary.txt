@@ -1,0 +1,5 @@
+I have not linked HW5 and HW4 as some features of HW4 have not been finalized and also the databases would have to be changed.
+I instead created a new table and called it user(not users as in HW4).
+Going to index will redirect you to login if you have not yet signed it.
+Signing in will take you to index which will then redirect you to the search page(since index doesn't have much) and you could do two types of searches there.
+I recommend searching for "lael" as the images will be displayed for users found.
