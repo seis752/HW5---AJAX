@@ -1,5 +1,5 @@
 <?php
-
+require_once("functions.php");
 include_once "settings.php";
 
     if ($_SESSION['user'] ){
@@ -21,16 +21,24 @@ include_once "settings.php";
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Page</title>
+    <title>User Login</title>
+    <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 </head>
 <body>
-<h1>
-    Login Form
-</h1>
+<div class="login-card">
+
+<h1>Log-in</h1>
 <form action="login.php" method="GET">
-    username:<input type="text" name="username" id="username"" "/></br>
-    password:<input type="password" name="password" id="password"/></br>
-    <input type="submit" value="Submit"/>
+    <input type="text" name="username" id="username" placeholder="Username"/></br>
+    <input type="password" name="password" id="password" placeholder="Password"/></br>
+
+    <input type="submit" name="submit" value="Submit" class="login login-submit"/>
+
+    <div class="login-help">
+        <a href="register.php">Register</a> • <a href="forgot.php">Forgot Password</a>
+    </div>
 </form>
+</div>
 </body>
 </html>
